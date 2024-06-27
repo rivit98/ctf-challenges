@@ -1,0 +1,9 @@
+FROM ubuntu:23.10@sha256:008c4aa50da87ad7bc586a47787491f76c79c62cc5bdbee29121ee9e02c03f3e
+
+RUN apt-get update -y && apt-get install -y --no-install-recommends python3 python3-pip git gcc curl wget build-essential texinfo gdb terminator strace
+RUN alias python=python3
+RUN pip install --break-system-packages pwntools
+RUN git clone https://github.com/pwndbg/pwndbg && cd pwndbg && ./setup.sh
+
+ENV LC_CTYPE=C.UTF-8
+# docker run -v $PWD:/w -w /w -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY -it q3vm-debug

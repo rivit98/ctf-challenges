@@ -1,0 +1,7 @@
+{
+    "name": "q3vm",
+    "identifier": "pwn-q3vm",
+    "category": ["pwn"],
+    "difficulty": "hard",
+    "version": 2
+}

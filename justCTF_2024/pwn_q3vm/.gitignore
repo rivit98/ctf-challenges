@@ -1,0 +1,5 @@
+*.o
+.vscode
+.gdb_history
+__pycache__
+q3vm_src

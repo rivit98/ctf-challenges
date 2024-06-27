@@ -1,0 +1,7 @@
+{
+    "name": "Star",
+    "identifier": "star",
+    "category": ["re", "misc"],
+    "difficulty": "easy",
+    "version": 3
+}
