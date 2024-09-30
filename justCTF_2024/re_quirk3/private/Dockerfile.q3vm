@@ -1,0 +1,16 @@
+FROM ubuntu:24.04
+ARG DEBIAN_FRONTEND=noninteractive
+
+RUN apt update && apt -y --no-install-recommends install git g++ make ca-certificates
+RUN git clone -n https://github.com/jnz/q3vm.git && cd q3vm && git checkout 92f2437173e28280fe8aeb77d1ceb87d567de29d
+COPY patch.diff /tmp/patch.diff
+WORKDIR /q3vm
+
+RUN git apply /tmp/patch.diff
+
+RUN make all
+RUN strip q3vm
+
+ENV PATH="$PATH:/q3vm/bin/linux"
+
+CMD [ "bash" ]

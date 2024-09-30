@@ -1,0 +1,412 @@
+;; header
+; magic 0x12721444
+; instruction count: 0x112
+; CODE seg offset: 0x00000020  length: 0x350
+; DATA seg offset: 0x00000370  length: 0x70
+; LIT  seg offset: 0x000003e0  length: 0x20
+; BSS  seg offset: 0x00000400  length: 0x10000
+
+;; function hashes
+0x00000000  0xbc  -21ed7e68
+0x000000bb  0x1a  313db101
+0x000000d4  0x1a  -2f982067
+0x000000ed  0x8  757355f2
+0x000000f4  0x16  -36fb9fa
+0x00000109  0x9  25021824
+
+;; code segment
+
+; max local arg 0x10
+; ========================
+00000000  enter               0x70
+    Arg[0x8] = &local20;
+    ; const 0x0 : 00 00 00 00  (0x0)
+
+    Arg[0xc] = 0x0;
+    ; const 0x30 : 05 8c 61 d9  (0xd9618c05)
+
+    Arg[0x10] = 0x30;
+00000007  const           1  -0x3
+00000008  call           -1
+00000009  pop            -1
+0000000a  const           1   0x1337
+0000000b  arg            -1   0x8
+    ;; dec: ----
+
+0000000c  const           1   0xed  ; :unknown function:
+0000000d  call           -1
+0000000e  pop            -1
+
+  ; "Input flag: " \n
+0000000f  const           1   0x81
+00000010  arg            -1   0x8
+    ;; dec: ----
+
+00000011  const           1   0x109  ; :unknown function:
+00000012  call           -1
+00000013  pop            -1
+00000014  local           1   0x20
+00000015  arg            -1   0x8
+    ;; dec: ----
+
+    ; const 0x30 : 05 8c 61 d9  (0xd9618c05)
+
+    Arg[0xc] = 0x30;
+00000018  local           1   0x54
+00000019  const           1  -0x5
+0000001a  call           -1
+0000001b  store4         -2
+    ;; dec: ----
+
+0000001c  local           1   0x54
+0000001d  load4
+
+  ; 00 00 00 00  (0x0)
+0000001e  const           1   0x0
+0000001f  ne             -2   0x29
+
+  ; "Nope!" \n
+00000020  const           1   0x7a
+00000021  arg            -1   0x8
+    ;; dec: ----
+
+00000022  const           1   0x109  ; :unknown function:
+00000023  call           -1
+00000024  pop            -1
+
+  ; 00 00 00 4c  (0x4c000000)
+00000025  const           1   0x1
+00000026  leave               0x70
+00000027  const           1   0xb9
+00000028  jump           -1
+
+;----------------------------------- from  0x1f
+00000029  local           1   0x14
+
+  ; 00 00 00 00  (0x0)
+0000002a  const           1   0x0
+0000002b  store4         -2
+    ;; dec: ----
+
+0000002c  const           1   0x78
+0000002d  jump           -1
+
+;----------------------------------- from  0x7b
+0000002e  local           1   0x18
+0000002f  local           1   0x14
+00000030  load4
+00000031  local           1   0x20
+00000032  add            -1
+00000033  load1
+00000034  sex8
+00000035  store4         -2
+    ;; dec: ----
+
+00000036  local           1   0x58
+00000037  const           1   0xf4  ; :unknown function:
+00000038  call           -1
+00000039  store4         -2
+    ;; dec: ----
+
+    *(int *)(&local1c) = *(int *)(&local58);
+    ; const 0x10 : 2e 07 d0 61  (0x61d0072e)
+
+    *(int *)(&local18) = ((unsigned int)(*(int *)(&local18))) | ((unsigned int)((*(int *)(&local18)) << (0x10)));
+    Arg[0x8] = *(int *)(&local18);
+    ; const 0x5 : 23 40 0d 9e  (0x9e0d4023)
+
+    Arg[0xc] = 0x5;
+0000004c  local           1   0x60
+0000004d  const           1   0xbb  ; :unknown function:
+0000004e  call           -1
+0000004f  store4         -2
+    ;; dec: ----
+
+    *(int *)(&local18) = *(int *)(&local60);
+    Arg[0x8] = ((unsigned int)(*(int *)(&local1c))) ^ ((unsigned int)(*(int *)(&local18)));
+    Arg[0xc] = *(int *)(&local14);
+0000005d  local           1   0x68
+0000005e  const           1   0xd4  ; :unknown function:
+0000005f  call           -1
+00000060  store4         -2
+    ;; dec: ----
+
+    ; const 0x2 : 00 00 4c 23  (0x234c0000)
+
+    ; const 0x4 : 4c 23 40 0d  (0xd40234c)
+
+    *(int *)(&local6c) = ((*(int *)(&local14)) << (0x2)) + (0x4);
+    *(int *)(*(int *)(&local6c)) = (*(int *)(*(int *)(&local6c))) - (*(int *)(&local68));
+    ; const 0x1 : 00 00 00 4c  (0x4c000000)
+
+    *(int *)(&local14) = (*(int *)(&local14)) + (0x1);
+
+;----------------------------------- from  0x2d
+00000078  local           1   0x14
+00000079  load4
+
+  ; 54 c8 cb 01  (0x1cbc854)
+0000007a  const           1   0x1a
+0000007b  ltu            -2   0x2e
+0000007c  local           1   0x50
+
+  ; 00 00 00 4c  (0x4c000000)
+0000007d  const           1   0x1
+0000007e  store4         -2
+    ;; dec: ----
+
+    ; const 0x0 : 00 00 00 00  (0x0)
+
+    *(int *)(&local14) = 0x0;
+00000082  const           1   0x96
+00000083  jump           -1
+
+;----------------------------------- from  0x99
+00000084  local           1   0x14
+00000085  load4
+
+  ; 00 00 4c 23  (0x234c0000)
+00000086  const           1   0x2
+00000087  lsh            -1
+
+  ; 4c 23 40 0d  (0xd40234c)
+00000088  const           1   0x4
+00000089  add            -1
+0000008a  load4
+
+  ; 00 00 00 00  (0x0)
+0000008b  const           1   0x0
+0000008c  eq             -2   0x90
+0000008d  local           1   0x50
+
+  ; 00 00 00 00  (0x0)
+0000008e  const           1   0x0
+0000008f  store4         -2
+    ;; dec: ----
+
+
+;----------------------------------- from  0x8c
+00000090  local           1   0x14
+00000091  local           1   0x14
+00000092  load4
+
+  ; 00 00 00 4c  (0x4c000000)
+00000093  const           1   0x1
+00000094  add            -1
+00000095  store4         -2
+    ;; dec: ----
+
+
+;----------------------------------- from  0x83
+00000096  local           1   0x14
+00000097  load4
+
+  ; 54 c8 cb 01  (0x1cbc854)
+00000098  const           1   0x1a
+00000099  ltu            -2   0x84
+0000009a  local           1   0x50
+0000009b  load4
+
+  ; 00 00 00 00  (0x0)
+0000009c  const           1   0x0
+0000009d  eq             -2   0xa5
+
+  ; "Correct!" \n
+0000009e  const           1   0x70
+0000009f  arg            -1   0x8
+    ;; dec: ----
+
+000000a0  const           1   0x109  ; :unknown function:
+000000a1  call           -1
+000000a2  pop            -1
+000000a3  const           1   0xaa
+000000a4  jump           -1
+
+;----------------------------------- from  0x9d
+
+  ; "Nope!" \n
+000000a5  const           1   0x7a
+000000a6  arg            -1   0x8
+    ;; dec: ----
+
+000000a7  const           1   0x109  ; :unknown function:
+000000a8  call           -1
+000000a9  pop            -1
+
+;----------------------------------- from  0xa4
+000000aa  local           1   0x50
+000000ab  load4
+
+  ; 00 00 00 00  (0x0)
+000000ac  const           1   0x0
+000000ad  ne             -2   0xb3
+000000ae  local           1   0x58
+
+  ; 00 00 00 4c  (0x4c000000)
+000000af  const           1   0x1
+000000b0  store4         -2
+    ;; dec: ----
+
+000000b1  const           1   0xb6
+000000b2  jump           -1
+
+;----------------------------------- from  0xad
+000000b3  local           1   0x58
+
+  ; 00 00 00 00  (0x0)
+000000b4  const           1   0x0
+000000b5  store4         -2
+    ;; dec: ----
+
+
+;----------------------------------- from  0xb2
+000000b6  local           1   0x58
+000000b7  load4
+000000b8  leave               0x70
+
+;----------------------------------- from  0x28
+000000b9  push            1
+000000ba  leave               0x70
+
+; called from 0x0
+
+; 0xc args
+; max local arg 0x8
+; ========================
+000000bb  enter               0x10
+    ; 000000bd local  0x18 ; arg0
+    *(int *)(&local8) = *(int *)(&arg0);
+    ; 000000c1 local  0x1c ; arg1
+    *(int *)(&localc) = *(int *)(&arg1);
+000000c4  local           1   0x8
+000000c5  load4
+000000c6  local           1   0xc
+000000c7  load4
+000000c8  lsh            -1
+000000c9  local           1   0x8
+000000ca  load4
+
+  ; 62 c0 1e 1e  (0x1e1ec062)
+000000cb  const           1   0x20
+000000cc  local           1   0xc
+000000cd  load4
+000000ce  sub            -1
+000000cf  rshu           -1
+000000d0  bor            -1
+000000d1  leave               0x10
+000000d2  push            1
+000000d3  leave               0x10
+
+; called from 0x0
+
+; 0xc args
+; max local arg 0x8
+; ========================
+000000d4  enter               0x10
+    ; 000000d6 local  0x18 ; arg0
+    *(int *)(&local8) = *(int *)(&arg0);
+    ; 000000da local  0x1c ; arg1
+    *(int *)(&localc) = *(int *)(&arg1);
+000000dd  local           1   0x8
+000000de  load4
+000000df  local           1   0xc
+000000e0  load4
+000000e1  rshu           -1
+000000e2  local           1   0x8
+000000e3  load4
+
+  ; 62 c0 1e 1e  (0x1e1ec062)
+000000e4  const           1   0x20
+000000e5  local           1   0xc
+000000e6  load4
+000000e7  sub            -1
+000000e8  lsh            -1
+000000e9  bor            -1
+000000ea  leave               0x10
+000000eb  push            1
+000000ec  leave               0x10
+
+; called from 0x0
+
+; 0x8 args
+; max local arg 0x8
+; ========================
+000000ed  enter               0x8
+    ; const 0x6c : 00 00 00 00  (0x0)
+
+    ; 000000ef local  0x10 ; arg0
+    *(int *)(0x6c) = *(int *)(&arg0);
+000000f2  push            1
+000000f3  leave               0x8
+
+; called from 0x0
+
+; no args
+; max local arg 0x8
+; ========================
+000000f4  enter               0xc
+    ; const 0x6c : 00 00 00 00  (0x0)
+
+    *(int *)(&local8) = 0x6c;
+    ; const 0x1 : 00 00 00 4c  (0x4c000000)
+
+    *(int *)(*(int *)(&local8)) = ((0x10dcd) * (*(int *)(*(int *)(&local8)))) + (0x1);
+
+  ; 00 00 00 00  (0x0)
+00000102  const           1   0x6c
+00000103  load4
+00000104  const           1   0x7fff
+00000105  band           -1
+00000106  leave               0xc
+00000107  push            1
+00000108  leave               0xc
+
+; called from 0x0 0x0 0x0 0x0
+
+; 0x8 args
+; max local arg 0x8
+; ========================
+00000109  enter               0xc
+    ; 0000010a local  0x14 ; arg0
+    Arg[0x8] = *(int *)(&arg0);
+0000010d  const           1  -0x1
+0000010e  call           -1
+0000010f  pop            -1
+00000110  push            1
+00000111  leave               0xc
+
+;; data segment
+0x00000000   00 00 00 00    0x0
+0x00000004   4c 23 40 0d    0xd40234c
+0x00000008   9e 3a 50 87    0x87503a9e
+0x0000000c   f6 1e 98 83    0x83981ef6
+0x00000010   2e 07 d0 61    0x61d0072e
+0x00000014   cf 02 86 80    0x808602cf
+0x00000018   79 00 54 c8    0xc8540079
+0x0000001c   cb 01 23 98    0x982301cb
+0x00000020   62 c0 1e 1e    0x1e1ec062
+0x00000024   2f 20 0e c4    0xc40e202f
+0x00000028   1c 50 87 9a    0x9a87501c
+0x0000002c   05 88 81 5c    0x5c818805
+0x00000030   05 8c 61 d9    0xd9618c05
+0x00000034   07 d6 00 c9    0xc900d607
+0x00000038   03 5f 88 36    0x36885f03
+0x0000003c   81 38 78 8c    0x8c783881
+0x00000040   40 1d 0e 5c    0x5c0e1d40
+0x00000044   80 06 3c 26    0x263c0680
+0x00000048   b0 86 f6 27    0x27f686b0
+0x0000004c   98 81 62 1d    0x1d628198
+0x00000050   7c 61 f0 07    0x7f0617c
+0x00000054   e2 80 46 07    0x74680e2
+0x00000058   75 48 e8 00    0xe84875
+0x0000005c   1a 58 57 01    0x157581a
+0x00000060   18 7e 2b c0    0xc02b7e18
+0x00000064   0d f4 07 60    0x6007f40d
+0x00000068   87 92 39 d0    0xd0399287
+0x0000006c   00 00 00 00    0x0
+
+;; lit segment
+0x00000070  "Correct!" \n
+0x0000007a  "Nope!" \n
+0x00000081  "Input flag: " \n
+0x0000008f  ""

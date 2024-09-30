@@ -1,0 +1,7 @@
+{
+    "name": "Eraser",
+    "identifier": "eraser",
+    "category": ["misc", "re"],
+    "difficulty": "easy",
+    "version": 1
+}
