@@ -1,0 +1,7 @@
+{
+    "name": "prospector",
+    "identifier": "prospector",
+    "category": ["pwn"],
+    "difficulty": "easy",
+    "version": 1
+}

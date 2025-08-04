@@ -1,0 +1,7 @@
+{
+    "name": "shellcode printer",
+    "identifier": "shellcodeprinter",
+    "category": ["pwn", "baby"],
+    "difficulty": "easy",
+    "version": 1
+}
