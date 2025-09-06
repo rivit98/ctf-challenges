@@ -1,0 +1,362 @@
+services:
+  
+  pwn-lottery-ctflearn:
+    build:
+      context: ./pwn-lottery/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10005}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  pwn-accumulator-ctflearn:
+    build:
+      context: ./pwn-accumulator/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10009}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  pwn-random-malloc-ctflearn:
+    build:
+      context: ./pwn-random-malloc/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10017}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  pwn-leak-me-ctflearn:
+    build:
+      context: ./pwn-leak-me/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10003}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  pwn-readme-ctflearn:
+    build:
+      context: ./pwn-readme/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10007}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  pwn-redirected-ctflearn:
+    build:
+      context: ./pwn-redirected/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10018}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  pwn-callsys-ctflearn:
+    build:
+      context: ./pwn-callsys/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10021}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  pwn-disabled-service-ctflearn:
+    build:
+      context: ./pwn-disabled-service/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10002}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  pwn-banned-bytes-ctflearn:
+    build:
+      context: ./pwn-banned-bytes/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10012}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  pwn-buffer-brothers-ctflearn:
+    build:
+      context: ./pwn-buffer-brothers/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10023}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  pwn-inspector-gadget-ctflearn:
+    build:
+      context: ./pwn-inspector-gadget/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10020}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  pwn-domain-name-resolver-ctflearn:
+    build:
+      context: ./pwn-domain-name-resolver/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10004}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  pwn-runner-ctflearn:
+    build:
+      context: ./pwn-runner/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10001}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  pwn-positive-challenge-ctflearn:
+    build:
+      context: ./pwn-positive-challenge/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10010}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  pwn-two-times-sixteen-ctflearn:
+    build:
+      context: ./pwn-two-times-sixteen/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10000}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  pwn-no-more-cookies-ctflearn:
+    build:
+      context: ./pwn-no-more-cookies/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10016}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  pwn-cookies-ctflearn:
+    build:
+      context: ./pwn-cookies/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10015}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  pwn-slow-bin-ctflearn:
+    build:
+      context: ./pwn-slow-bin/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10014}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  pwn-house-ctflearn:
+    build:
+      context: ./pwn-house/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10006}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  pwn-theft-ctflearn:
+    build:
+      context: ./pwn-theft/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10019}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  pwn-hook-ctflearn:
+    build:
+      context: ./pwn-hook/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10024}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  pwn-chain-ctflearn:
+    build:
+      context: ./pwn-chain/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10008}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  pwn-glob-ctflearn:
+    build:
+      context: ./pwn-glob/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10022}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  pwn-management-ctflearn:
+    build:
+      context: ./pwn-management/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10013}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  misc-impossible-equation-ctflearn:
+    build:
+      context: ./misc-impossible-equation/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10011}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  pwn-slope-ctflearn:
+    build:
+      context: ./pwn-slope/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10025}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  pwn-secret-ctflearn:
+    build:
+      context: ./pwn-secret/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10026}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  pwn-school-ctflearn:
+    build:
+      context: ./pwn-school/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10027}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  re_misc_file-manager-ctflearn:
+    build:
+      context: ./re_misc_file-manager/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10028}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    
+  misc_eraser-ctflearn:
+    build:
+      context: ./misc_eraser/private
+      args:
+        - flag_path=flag_ctflearn.txt
+    ports:
+      - "${MY_PORT:-10029}:5000"
+    privileged: true
+    restart: unless-stopped
+    profiles:
+        - enabled
+    

@@ -1,0 +1,180 @@
+challenges:
+  pwn-lottery-ctflearn:
+    dir: pwn-lottery
+    enabled: true
+    port: 10005
+    flag: flag_ctflearn.txt
+
+  pwn-accumulator-ctflearn:
+    dir: pwn-accumulator
+    enabled: true
+    port: 10009
+    flag: flag_ctflearn.txt
+
+  pwn-random-malloc-ctflearn:
+    dir: pwn-random-malloc
+    enabled: true
+    port: 10017
+    flag: flag_ctflearn.txt
+
+  pwn-leak-me-ctflearn:
+    dir: pwn-leak-me
+    enabled: true
+    port: 10003
+    flag: flag_ctflearn.txt
+
+  pwn-readme-ctflearn:
+    dir: pwn-readme
+    enabled: true
+    port: 10007
+    flag: flag_ctflearn.txt
+
+  pwn-redirected-ctflearn:
+    dir: pwn-redirected
+    enabled: true
+    port: 10018
+    flag: flag_ctflearn.txt
+
+  pwn-callsys-ctflearn:
+    dir: pwn-callsys
+    enabled: true
+    port: 10021
+    flag: flag_ctflearn.txt
+
+  pwn-disabled-service-ctflearn:
+    dir: pwn-disabled-service
+    enabled: true
+    port: 10002
+    flag: flag_ctflearn.txt
+
+  pwn-banned-bytes-ctflearn:
+    dir: pwn-banned-bytes
+    enabled: true
+    port: 10012
+    flag: flag_ctflearn.txt
+
+  pwn-buffer-brothers-ctflearn:
+    dir: pwn-buffer-brothers
+    enabled: true
+    port: 10023
+    flag: flag_ctflearn.txt
+
+  pwn-inspector-gadget-ctflearn:
+    dir: pwn-inspector-gadget
+    enabled: true
+    port: 10020
+    flag: flag_ctflearn.txt
+
+  pwn-domain-name-resolver-ctflearn:
+    dir: pwn-domain-name-resolver
+    enabled: true
+    port: 10004
+    flag: flag_ctflearn.txt
+
+  pwn-runner-ctflearn:
+    dir: pwn-runner
+    enabled: true
+    port: 10001
+    flag: flag_ctflearn.txt
+
+  pwn-positive-challenge-ctflearn:
+    dir: pwn-positive-challenge
+    enabled: true
+    port: 10010
+    flag: flag_ctflearn.txt
+
+  pwn-two-times-sixteen-ctflearn:
+    dir: pwn-two-times-sixteen
+    enabled: true
+    port: 10000
+    flag: flag_ctflearn.txt
+
+  pwn-no-more-cookies-ctflearn:
+    dir: pwn-no-more-cookies
+    enabled: true
+    port: 10016
+    flag: flag_ctflearn.txt
+
+  pwn-cookies-ctflearn:
+    dir: pwn-cookies
+    enabled: true
+    port: 10015
+    flag: flag_ctflearn.txt
+
+  pwn-slow-bin-ctflearn:
+    dir: pwn-slow-bin
+    enabled: true
+    port: 10014
+    flag: flag_ctflearn.txt
+
+  pwn-house-ctflearn:
+    dir: pwn-house
+    enabled: true
+    port: 10006
+    flag: flag_ctflearn.txt
+
+  pwn-theft-ctflearn:
+    dir: pwn-theft
+    enabled: true
+    port: 10019
+    flag: flag_ctflearn.txt
+
+  pwn-hook-ctflearn:
+    dir: pwn-hook
+    enabled: true
+    port: 10024
+    flag: flag_ctflearn.txt
+
+  pwn-chain-ctflearn:
+    dir: pwn-chain
+    enabled: true
+    port: 10008
+    flag: flag_ctflearn.txt
+
+  pwn-glob-ctflearn:
+    dir: pwn-glob
+    enabled: true
+    port: 10022
+    flag: flag_ctflearn.txt
+
+  pwn-management-ctflearn:
+    dir: pwn-management
+    enabled: true
+    port: 10013
+    flag: flag_ctflearn.txt
+
+  misc-impossible-equation-ctflearn:
+    dir: misc-impossible-equation
+    enabled: true
+    port: 10011
+    flag: flag_ctflearn.txt
+
+  pwn-slope-ctflearn:
+    dir: pwn-slope
+    enabled: true
+    port: 10025
+    flag: flag_ctflearn.txt
+
+  pwn-secret-ctflearn:
+    dir: pwn-secret
+    enabled: true
+    port: 10026
+    flag: flag_ctflearn.txt
+
+  pwn-school-ctflearn:
+    dir: pwn-school
+    enabled: true
+    port: 10027
+    flag: flag_ctflearn.txt
+
+  re_misc_file-manager-ctflearn:
+    dir: re_misc_file-manager
+    enabled: true
+    port: 10028
+    flag: flag_ctflearn.txt
+
+  misc_eraser-ctflearn:
+    dir: misc_eraser
+    enabled: true
+    port: 10029
+    flag: flag_ctflearn.txt

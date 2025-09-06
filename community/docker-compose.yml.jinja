@@ -1,0 +1,20 @@
+services:
+  {% for task_name, task_details in tasks %}
+  {{ task_name }}:
+    build:
+      context: ./{{ task_details.get('dir') }}/private
+      {% if task_details.get('build_args') -%}
+      args:
+        {% for arg in task_details.get('build_args') -%}
+        - {{ arg }}
+        {%- endfor %}
+      {%- endif %}
+    ports:
+      - "${MY_PORT:-{{ task_details.get('port') }}}:5000"
+    privileged: true
+    restart: unless-stopped
+    {% if task_details.get('enabled') -%}
+    profiles:
+        - enabled
+    {% endif %}
+  {%- endfor %}
