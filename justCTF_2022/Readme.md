@@ -2,6 +2,6 @@
 
 | Name         | Category | Challenge Link                  |
 |--------------|----------|---------------------------------|
-| AMXX      | RE       | [re_amxx](justCTF_2022/re_amxx) |
-| im-slow   | RE       | [re_im-slow](justCTF_2022/re_im-slow) |
-| skilltest| PWN      | [pwn_skilltest](justCTF_2022/pwn_skilltest) |
+| AMXX      | re       | [re_amxx](./re_amxx) |
+| im-slow   | re       | [re_im-slow](./re_im-slow) |
+| skilltest| pwn      | [pwn_skilltest](./pwn_skilltest) |
