@@ -1,0 +1,3 @@
+# patcher
+
+Is it possible to run some code before executing the `main` function? Let's check it out ...

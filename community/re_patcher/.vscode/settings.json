@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "*.asm": "asm-intel-x86-generic",
+        "*.inl": "amxxpawn",
+        "*.nasm": "asm-intel-x86-generic",
+        "*.inc": "amxxpawn",
+        "*.tpl": "html",
+        "compare": "c",
+        "cstdint": "c",
+        "string.h": "c",
+        "ctflearn.h": "c",
+        "ctype.h": "c"
+    }
+}

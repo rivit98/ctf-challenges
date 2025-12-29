@@ -1,0 +1,8 @@
+[package]
+name = "solve"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+crc32fast = "1.4.2"
+zip = "2.2.0"

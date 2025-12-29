@@ -1,0 +1,6 @@
+.vscode
+.idea
+private/initramfs
+private/corepure64.gz
+private/initramfs.fakeroot
+

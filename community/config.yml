@@ -208,3 +208,213 @@ challenges:
     deprecated: true
     port: 10029
     flag: flag_ctflearn.txt
+
+  ctfguide00:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11000
+    flag: flag.txt
+
+  ctfguide01:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11001
+    flag: flag.txt
+
+  ctfguide02:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11002
+    flag: flag.txt
+
+  ctfguide03:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11003
+    flag: flag.txt
+
+  ctfguide04:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11004
+    flag: flag.txt
+
+  ctfguide05:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11005
+    flag: flag.txt
+
+  ctfguide06:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11006
+    flag: flag.txt
+
+  ctfguide07:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11007
+    flag: flag.txt
+
+  ctfguide08:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11008
+    flag: flag.txt
+
+  ctfguide09:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11009
+    flag: flag.txt
+
+  ctfguide10:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11010
+    flag: flag.txt
+
+  ctfguide11:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11011
+    flag: flag.txt
+
+  ctfguide12:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11012
+    flag: flag.txt
+
+  ctfguide13:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11013
+    flag: flag.txt
+
+  ctfguide14:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11014
+    flag: flag.txt
+
+  ctfguide15:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11015
+    flag: flag.txt
+
+  ctfguide16:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11016
+    flag: flag.txt
+
+  ctfguide17:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11017
+    flag: flag.txt
+
+  ctfguide18:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11018
+    flag: flag.txt
+
+  ctfguide19:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11019
+    flag: flag.txt
+
+  ctfguide20:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11020
+    flag: flag.txt
+
+  ctfguide21:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11021
+    flag: flag.txt
+
+  ctfguide22:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11022
+    flag: flag.txt
+
+  ctfguide23:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11023
+    flag: flag.txt
+
+  ctfguide24:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11024
+    flag: flag.txt
+
+  ctfguide25:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11025
+    flag: flag.txt
+
+  ctfguide26:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11026
+    flag: flag.txt
+
+  ctfguide27:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11027
+    flag: flag.txt
+
+  ctfguide28:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11028
+    flag: flag.txt
+
+  ctfguide29:
+    dir: ctfguide_redirector
+    enabled: true
+    deprecated: true
+    port: 11029
+    flag: flag.txt

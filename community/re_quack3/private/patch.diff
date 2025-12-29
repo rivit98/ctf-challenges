@@ -1,0 +1,28 @@
+diff --git a/src/main.c b/src/main.c
+index 59f86e2..477cf24 100644
+--- a/src/main.c
++++ b/src/main.c
+@@ -15,6 +15,7 @@
+ 
+ #include <stdio.h>
+ #include <stdlib.h>
++#include <unistd.h>
+ #include "vm.h"
+ 
+ /* The compiled bytecode calls native functions, defined in this file.
+@@ -167,6 +168,15 @@ intptr_t systemCalls(vm_t* vm, intptr_t* args)
+         }
+         return args[1];
+ 
++    case -5: /* read from stdin */
++        int n = 0;
++        if (VM_MemoryRangeValid(args[1] /*addr*/, args[2] /*len*/, vm) == 0)
++        {
++            n = read(STDIN_FILENO, VMA(1, vm), args[2]);
++        }
++        return n;
++
++
+     default:
+         fprintf(stderr, "Bad system call: %i\n", id);
+     }
